@@ -15,5 +15,5 @@ error68<-qnorm(0.84)*x$deviance[1]/sqrt(length(N))
 
 #printing out BETA and confidence intervals of BETA
 print(exp(x$coefficient[1]))
-cat("CI95% [", exp(x$coefficient[1]-error95), "-", exp(x$coefficient[1]+error95), "]")
+cat("CI95% [", exp(x$coefficient[1]-error95), "-", exp(x$coefficient[1]+error95), "]\n")
 cat("CI68% [", exp(x$coefficient[1]-error68), "-", exp(x$coefficient[1]+error68), "]")
